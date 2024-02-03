@@ -3,24 +3,24 @@ require("dotenv").config();
 module.exports = {
   token: process.env.TOKEN || '', 
   prefix: process.env.PREFIX || '.', 
-  ownerID: process.env.OWNERID?.split(',') || ['519666024220721152','965503342249914408'], 
-  SpotifyID: process.env.SPOTIFYID || '', 
-  SpotifySecret: process.env.SPOTIFYSECRET || '', 
+  ownerID: process.env.OWNERID?.split(',') || ['',''], 
+    SpotifyID: process.env.SPOTIFYID || 'db562a90c37e447e90ec7a2791169ccd',
+    SpotifySecret: process.env.SPOTIFYSECRET || '025b688074514291aa58f07bbf6e8ad3',
   mongourl: process.env.MONGO_URI || '', 
   embedColor: process.env.COlOR || '#DDBD86', // 
   logs: process.env.LOGS || '', 
   links: {
-    support: process.env.SUPPORT || 'https://discord.gg/aromax-development-708565122188312579',
-    invite: process.env.INVITE || 'https://discord.gg/aromax-development-708565122188312579',
-    vote: process.env.VOTE || 'https://discord.gg/aromax-development-708565122188312579',
-    bg: process.env.BG || 'https://media.discordapp.net/attachments/966675680907657256/967789748699668480/flat-landscape-lake-sunset-deer-wallpaper-preview.jpg'
+    support: process.env.SUPPORT || '',
+    invite: process.env.INVITE || '',
+    vote: process.env.VOTE || '',
+    bg: process.env.BG || ''
   },
 
   nodes: [
     {
-      url: process.env.NODE_URL || 'lavalink.devamop.in:80',
-      name: process.env.NODE_NAME || 'Main',
-      auth: process.env.NODE_AUTH || 'DevamOP',
+          url: process.env.NODE_URL || 'lava.link:80',
+      name: process.env.NODE_NAME || 'Name',
+          auth: process.env.NODE_AUTH || 'CodersPlanet',
       secure: parseBoolean(process.env.NODE_SECURE || 'false'),
     },
   ],
