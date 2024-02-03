@@ -3,9 +3,9 @@ require("dotenv").config();
 module.exports = {
   token: process.env.TOKEN || '', 
   prefix: process.env.PREFIX || '.', 
-  ownerID: process.env.OWNERID?.split(',') || ['748505124543922219',''], 
-    SpotifyID: process.env.SPOTIFYID || 'db562a90c37e447e90ec7a2791169ccd',
-    SpotifySecret: process.env.SPOTIFYSECRET || '025b688074514291aa58f07bbf6e8ad3',
+  ownerID: process.env.OWNERID?.split(',') || ['',''], 
+    SpotifyID: process.env.SPOTIFYID || '',
+    SpotifySecret: process.env.SPOTIFYSECRET || '',
   mongourl: process.env.MONGO_URI || '', 
   embedColor: process.env.COlOR || '#DDBD86', // 
   logs: process.env.LOGS || '', 
